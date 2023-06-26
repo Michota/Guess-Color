@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  background-color: #242424;
+  color: white;
+  font-size: 4vh;
+  text-shadow: 1px 1px 1px black;
+}
+
+.score {
+  position: absolute;
+  top: 0%;
+  left: 90%;
+}
+
+.top {
+  width: 100%;
+  background: #444444;
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 0px 0px 2px black;
+}
+
+#btn {
+  font-size: 0.7em;
+  background-color: #242424;
+  width: 10%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s ease-in;
+  text-shadow: none !important;
+  box-shadow: 2px 5px 3px black;
+  margin-top: 5px;
+}
+
+#btn:hover {
+  box-shadow: 1px 1px 1px black;
+  transition: 0.6s ease;
+}
+.hardModeBtn {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  font-size: 0.7em;
+  background-color: #242424;
+  width: 10%;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s ease-in;
+  text-shadow: none !important;
+  box-shadow: 2px 5px 3px black;
+  margin-top: 5px;
+}
+
+.hardModeBtn:hover {
+  box-shadow: 1px 1px 1px black;
+  transition: 0.6s ease;
+}
+
+.restartBtn {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.clickedHardModeBtn {
+  color: red;
+  box-shadow: 0px 0px 0px black;
+  transition: 0.6s;
+}
+
+.gameName {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.randomColorResult {
+  font-size: 1.5em;
+}
+
+.squaresContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 5em);
+  grid-template-rows: repeat(3, 5em);
+}
+
+.square {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(68, 68, 68);
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 2em;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.square:hover {
+  box-shadow: 3px 3px 1px black;
+  transition: 0.2s ease;
+}
+
+.hidden {
+  display: none;
+}
